@@ -1,0 +1,249 @@
+.sb-widget {
+  margin-bottom: 75px;
+}
+
+.sb-widget:last-child {
+  margin-bottom: 0;
+}
+
+.sb-widget .sb-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.sb-widget .sb-search input {
+  width: 100%;
+  height: 53px;
+  font-size: 14px;
+  font-style: italic;
+  padding: 0 32px;
+  border: none;
+  border-bottom: 3px solid #10ddb4;
+}
+
+.sb-cata-list {
+  list-style: none;
+}
+
+.sb-cata-list li {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 13px;
+}
+
+.sb-cata-list li div {
+  cursor: pointer;
+  display: block;
+  color: #8c8c8c;
+  font-size: 16px;
+}
+
+.sb-cata-list li span {
+  float: right;
+  display: inline-block;
+  min-width: 25px;
+  height: 25px;
+  font-size: 11px;
+  color: #1c1c1c;
+  border-radius: 35px;
+  background: #fff;
+  text-align: center;
+  padding: 5px 5px 0;
+}
+
+.sb-cata-list li:nth-child(1) span {
+  background: #10ddb4;
+}
+
+.sb-cata-list li:nth-child(2) span {
+  background: #ff1980;
+}
+
+.sb-cata-list li:nth-child(3) span {
+  background: #ffe119;
+}
+
+.sb-cata-list li:nth-child(4) span {
+  background: #5da9e4;
+}
+
+.sb-cata-list li:nth-child(5) span {
+  background: #bd9bd2;
+}
+
+.sb-cata-list li:nth-child(6) span {
+  background: #f89843;
+}
+
+.sb-cata-list li:last-child div {
+  margin-bottom: 0;
+}
+
+.latest-news-widget .ln-item {
+  margin-bottom: 29px;
+  position: relative;
+}
+
+.latest-news-widget .ln-item:last-child {
+  margin-bottom: 0;
+}
+
+.latest-news-widget .ln-item img {
+  width: 85px;
+  height: 85px;
+  float: left;
+  margin-right: 27px;
+}
+
+.latest-news-widget .ln-text {
+  overflow: hidden;
+}
+
+.latest-news-widget .ln-text .ln-date {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 1px 5px;
+  margin-bottom: 10px;
+  background: #10ddb4;
+}
+
+.latest-news-widget .ln-text h6 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.ln-meta {
+  position: relative;
+  display: inline-block;
+  color: #8c8c8c;
+  font-size: 12px;
+  padding-right: 13px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.ln-meta:after {
+  position: absolute;
+  content: '|';
+  right: 0;
+  top: 0;
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+.latest-news-widget .ln-text .ln-metas .ln-meta:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.latest-news-widget .ln-text .ln-metas .ln-meta:last-child:after {
+  display: none;
+}
+
+.latest-news-widget .ln-text .ln-metas .post-category {
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #ffea00;
+}
+
+.latest-news-widget.top-five .ln-index {
+  position: absolute;
+  left: 19px;
+  top: -25px;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background: #10ddb4;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.latest-news-widget.top-five .ln-item {
+  margin-bottom: 59px;
+}
+
+.latest-news-widget.top-five .ln-item:nth-child(1) .ln-index {
+  background: #ff5581;
+}
+
+.latest-news-widget.top-five .ln-item:nth-child(2) .ln-index {
+  background: #10ddb4;
+}
+
+.latest-news-widget.top-five .ln-item:nth-child(3) .ln-index {
+  background: #5da9e4;
+}
+
+.latest-news-widget.top-five .ln-item:nth-child(4) .ln-index {
+  background: #ffe119;
+}
+
+.latest-news-widget.top-five .ln-item:nth-child(5) .ln-index {
+  background: #bd9bd2;
+}
+
+.latest-news-widget.top-five .ln-item:last-child {
+  margin-bottom: 0;
+}
+
+.latest-comments-widget .lc-item {
+  margin-bottom: 23px;
+}
+
+.latest-comments-widget .lc-item:last-child {
+  margin-bottom: 0;
+}
+
+.latest-comments-widget .lc-item img {
+  float: left;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 24px;
+}
+
+.latest-comments-widget .lc-text {
+  overflow: hidden;
+}
+
+.latest-comments-widget .lc-text h6 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.latest-comments-widget .lc-text span {
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.latest-comments-widget .lc-text .act-title {
+  color: #10ddb4;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.latest-comments-widget .lc-date {
+  color: #a5a4a4;
+  font-weight: 700;
+  font-size: 12px;
+}

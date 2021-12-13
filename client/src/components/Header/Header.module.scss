@@ -1,0 +1,125 @@
+/*------------------
+Header section
+ ---------------------*/
+
+.header_section {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #353535;
+  z-index: 9999;
+}
+
+.site_logo {
+  display: inline-block;
+  padding: 21px 55px 16px;
+  background: #222222;
+}
+
+.main_menu {
+  padding-left: 44px;
+  position: relative;
+  z-index: 99;
+  background: #353535;
+
+  li {
+    display: inline-block;
+
+    a {
+      position: relative;
+      text-decoration: none;
+      outline: none;
+      display: block;
+      padding: 47px 7px;
+      margin-right: 55px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #fff;
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 3px;
+        left: 0;
+        bottom: 0;
+        background: #10ddb4;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.slicknav_menu {
+  display: none;
+}
+
+.header_add {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 43%;
+  height: 100%;
+  text-align: right;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1360px) {
+  .main_menu li a {
+    margin-right: 30px;
+  }
+  .header_add {
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .main_menu {
+    padding-left: 15px;
+  }
+  .main_menu li a {
+    margin-right: 15px;
+  }
+  .header_add {
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .site_logo {
+    padding: 21px 30px 16px;
+  }
+  .main_menu {
+    padding-left: 15px;
+  }
+  .main_menu li a {
+    margin-right: 15px;
+  }
+  .header_add {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .site_logo {
+    padding: 20px 15px 16px;
+  }
+  .main_menu,
+  .header_add {
+    display: none;
+  }
+  .header_section {
+    background: #222222;
+  }
+}

@@ -1,0 +1,27 @@
+const DataIndex = {
+      feautures_p: '612f96d48186691a748fb42b',
+      blog_p: [
+        '612f97378186691a748fb42d',
+        '612f97d98186691a748fb42f',
+        '612f98178186691a748fb431',
+        '612f98588186691a748fb433',
+      ],
+      small_p: [
+        '612f99c98186691a748fb43f',
+        '612f99fb8186691a748fb441',
+        '612f9a258186691a748fb443',
+        '612f9a558186691a748fb445',
+      ],
+      header_banner: {
+        img: '3b2ba670-ecde-4812-ae81-27fbd1e79d02/header_add.jpg',
+        href: '#',
+      },
+      blog_banner: {
+        img: '3b2ba670-ecde-4812-ae81-27fbd1e79d02/blog_add.jpg',
+        href: '#',
+      },
+      index_video: {
+        img: '3b2ba670-ecde-4812-ae81-27fbd1e79d02/video-bg.jpg',
+        href: 'https://youtu.be/-lEQRceVk6A',
+      },
+    };
