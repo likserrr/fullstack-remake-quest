@@ -1,6 +1,3 @@
-// Нужно решить проблемы при создании Active.
-// Методом подбора можно присвоить любому юзеру любой коммент
-
 import express from 'express';
 import mongoose from 'mongoose';
 import router from './router.js';
@@ -8,7 +5,7 @@ import fileUpload from 'express-fileupload';
 import cors from 'cors';
 
 const PORT = 5000;
-const DB_URL = `UrlMongoHere`;
+const DB_URL = `MongoUrlHere`;
 
 const app = express();
 
