@@ -24,7 +24,6 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -38,7 +37,7 @@
 
 </details>
 
-# О проекте
+# About The Project
 
 <img src="https://github.com/likserrr/fullstack-remake-quest/blob/master/.media/MainScreen.jpg" width="800px">
 
@@ -48,7 +47,22 @@
 
 Данная работа была для меня принципиально новой. Это первая работа, код и систематизация которой меня устраивала. Где мне все было понятно и осталась возможность **масштабирования**. Также это первая *fullstack* работа
 
+## Built with
 
+В данной работе получилось испробовать одни из основных среди перспективных технологий в области разработки. Список основных:
+### Frontend
+* [React.js](https://reactjs.org/)
+* [Typescript](https://www.typescriptlang.org/)
+* [Mobx (simplified redax)](https://mobx.js.org/)
+* [Axios](https://axios-http.com/)
+### Backend
+* [Express](https://expressjs.com/)
+* [Mongoose](https://mongoosejs.com/)
+* [Probe-img-size (For images)](https://www.npmjs.com/package/probe-image-size)
+
+# Getting started
+
+Данное приложение имеет отдельную серверную и клиентскую часть. Для локальной установки и демонстрации возможностей необходимо создать 
 
 Первостепенной задачей проекта было взять за основу сверстанный макет и внедрить в него недостающий функционал. Это позволило поработать с основными новейшими технологиями в области frontend и backend разработки. В возможности приложения входили:
 
