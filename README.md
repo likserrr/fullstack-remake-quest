@@ -1,33 +1,44 @@
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://github.com/likserrr/fullstack-remake-quest/blob/master/client/public/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/likserrr/fullstack-remake-quest/blob/master/.media/QuestLogo.png" alt="Logo" width="215" height="110">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Quest Game Blog (Remake)</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Реализация функциональных возможностей HTML макета
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/likserrr/"><strong>Other Projects</strong></a>
   </p>
 </div>
 
 <details><summary>Оглавление</summary>
 
-   1. Кнопка с переходом на отдельную страницу с полным контентом поста
-   1. Отображение его категории, при клике на который выводятся все посты той же категории
-   1. Отображение количества комментариев каждого поста для оценки его активности пользователем
+   <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
 
 </details>
 
-# Расширение функционала game-блога Quest
+# О проекте
 
 <img src="https://github.com/likserrr/fullstack-remake-quest/blob/master/.media/MainScreen.jpg" width="800px">
 
