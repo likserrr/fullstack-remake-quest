@@ -8,6 +8,10 @@ import ServiceUtils from './ServiceUtils.js';
 import { defaultErr, saveFilesErr } from './utils/errorHandler.js';
 import Users from './models/Users.js';
 
+import LoadPosts from './utils/start/LoadPosts.js';
+import LoadUsers from './utils/start/LoadUsers.js';
+import LoadActive from './utils/start/LoadActive.js';
+
 dotenv.config();
 
 class PostService extends ServiceUtils {
@@ -187,6 +191,17 @@ class PostService extends ServiceUtils {
   async getLatestPosts() {
     const posts = await Post.find().limit(4).sort({ $natural: -1 });
 
+    await Promise.all(
+      posts.map(async (post) => {
+        const postActive = await Active.find({
+          post_id: { $eq: post._id },
+          comment: { $exists: true },
+        });
+        post._doc.comments = postActive.length;
+        return post;
+      }),
+    );
+
     return posts.map((item) => this.modifyPath(item, 'sidebar'));
   }
 
@@ -223,8 +238,60 @@ class PostService extends ServiceUtils {
       throw new Error('не указан ID');
     }
     const post = await Post.findById(id);
+    const postActive = await Active.find({
+      post_id: { $eq: id },
+      comment: { $exists: true },
+    });
+    post._doc.comments = postActive.length;
 
     return this.modifyPath(post, 'feature');
+  }
+
+  async getStart() {
+    await Post.insertMany(LoadPosts).catch((err) => {
+      if (err) throw new Error('Unexpected Err');
+    });
+    await Users.insertMany(LoadUsers).catch((err) => {
+      if (err) throw new Error('Unexpected Err');
+    });
+    const feature_p = await Post.findOne({ title: 'The best games of 2021' });
+    const blog_p1 = await Post.findOne({ title: 'Top 5 worlds to explore' });
+    const blog_p2 = await Post.findOne({
+      title: 'Enjoy learning the game in 1 evening',
+    });
+    const blog_p3 = await Post.findOne({ title: 'Drive games for any player' });
+    const blog_p4 = await Post.findOne({
+      title: 'Games that you will want to play again',
+    });
+
+    await IndexPosts.create({
+      feature_p: feature_p._id,
+      blog_p: [blog_p1._id, blog_p2._id, blog_p3._id, blog_p4._id],
+      small_p: [],
+    }).catch((err) => {
+      if (err) throw new Error('Unexpected Err');
+    });
+
+    let actives = [];
+
+    await Promise.all(
+      LoadActive.map(async (item) => {
+        const post = await Post.findOne({ title: item.post_title });
+        const user = await Users.findOne({ profile: item.author_profile });
+        const postActive = {
+          author: user._id,
+          post_id: post._id,
+          comment: item.comment_text,
+        };
+        actives.push(postActive);
+      }),
+    );
+
+    await Active.insertMany(actives).catch((err) => {
+      if (err) throw new defaultErr(err.message);
+    });
+
+    return 'Success';
   }
 }
 

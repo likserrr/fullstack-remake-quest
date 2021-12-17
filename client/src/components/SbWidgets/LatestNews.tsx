@@ -18,7 +18,9 @@ const LatestNews: FC<LatestPostProps> = (props) => {
       <img src={data.headimg_dir} alt="" />
       <div className="ln-text">
         <div className="ln-date">{data.date}</div>
-        <h6>{data.title}</h6>
+        <Link to={`/${data._id}`}>
+          <h6>{data.title}</h6>
+        </Link>
         <div className="ln-metas">
           <div className="ln-meta">{data.author}</div>
 

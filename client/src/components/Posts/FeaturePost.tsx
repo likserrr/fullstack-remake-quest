@@ -1,4 +1,5 @@
 import React, { FC, useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { Context } from '../..';
 import { IPost } from '../../models/posts/IPost';
 import { categoryEnum } from '../../utils/categoryEnum';
@@ -42,9 +43,11 @@ const FeaturePost: FC<FeatureProps> = (props) => {
         </div>
       </div>
       <p className={loading ? 'placeholder' : ''}>{postData.h1}</p>
-      <div className={loading ? 'site-btn placeholder' : 'site-btn'}>
-        Read More
-      </div>
+      <Link to={`/${postData._id}`}>
+        <div className={loading ? 'site-btn placeholder' : 'site-btn'}>
+          Read More
+        </div>
+      </Link>
     </div>
   );
 };

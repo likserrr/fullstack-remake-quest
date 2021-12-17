@@ -80,6 +80,8 @@ class PostController {
     }
   }
 
+
+
   async getBestPosts(req, res) {
     try {
       const posts = await PostService.getBestPosts();
@@ -185,6 +187,15 @@ class PostController {
     try {
       const post = await PostService.getOne(req.params.id);
       return res.json(post);
+    } catch (e) {
+      res.status(500).json(e);
+    }
+  }
+
+  async getStart(req, res) {
+    try {
+      const posts = await PostService.getStart();
+      return res.json(posts);
     } catch (e) {
       res.status(500).json(e);
     }

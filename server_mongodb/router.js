@@ -14,5 +14,6 @@ router.get('/posts/category/:name', PostController.getCategory);
 router.get('/posts/search/:query', PostController.searchPosts);
 router.get('/posts/latest', PostController.getLatestPosts);
 router.get('/posts/:id', PostController.getOne);
+router.get('/start', PostController.getStart);
 
 export default router;

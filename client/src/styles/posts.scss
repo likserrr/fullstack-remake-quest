@@ -256,10 +256,19 @@
 }
 
 .blog-post.featured-post .post-metas a,
-.blog-post.review-post .post-metas a,
-.blog-post.single-post .post-metas a {
+.blog-post.review-post .post-metas a {
   text-transform: capitalize;
   color: #10ddb4;
+}
+
+.blog-post.single-post .post-metas .ln-meta {
+  text-transform: capitalize;
+  color: #10ddb4;
+  padding: 0;
+  margin: 0;
+  &::after {
+    display: none;
+  }
 }
 
 .blog-post.featured-post .post-metas .post-meta.placeholder a,

@@ -1,7 +1,8 @@
 import { observer } from 'mobx-react-lite';
 import React, { FC, useContext, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Context } from '../..';
+import { categoryEnum } from '../../utils/categoryEnum';
 
 const SinglePost: FC = () => {
   const { store } = useContext(Context);
@@ -41,7 +42,17 @@ const SinglePost: FC = () => {
       <div className="post-metas">
         <div className="post-meta">{postData.author}</div>
         <div className="post-meta">
-          in <a href="#">{postData.category}</a>
+          in{' '}
+          <Link to={`/`}>
+            <div
+              onClick={() => {
+                const category = categoryEnum(postData.category);
+                store.clickCategory(category);
+              }}
+              className="ln-meta">
+              {postData.category}
+            </div>
+          </Link>
         </div>
         <div className="post-meta">{postData.comments} Comments</div>
       </div>
