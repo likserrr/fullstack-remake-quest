@@ -80,7 +80,7 @@
   git clone https://github.com/likserrr/fullstack-remake-quest.git
   ```
 
-2. Установка зависимостей
+2. Установка зависимостей отдельно на сервере и клиенте
   ```sh
   npm install
   ```
