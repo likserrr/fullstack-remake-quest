@@ -28,7 +28,16 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+     <li>
+      <a href="#getting-started">Usage</a>
+      <ul>
+        <li><a href="#preview-section">Preview section</a></li>
+        <li><a href="#search-section">Search section</a></li>
+        <li><a href="#category-section">Category section</a></li>
+        <li><a href="#last-post-section">Last post section</a></li>
+        <li><a href="#last-comments-section">Last comments section</a></li>
+      </ul>
+    </li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 
@@ -104,6 +113,15 @@
 # Usage
 
 Раздел с демонстрацией основных возможностей приложения. 
+
+## Preview section
+
+
+
+## Search section
+## Category section
+## Last post section
+## Last comments section
 
 
 
