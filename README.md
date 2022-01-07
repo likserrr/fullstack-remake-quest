@@ -144,17 +144,27 @@
 
 ## Preview and category
 
-При запуске проекта
+При запуске проекта будет отрендерена главная страница блога, которая состоит из главного поста 4 дополнительных постов среднего формата. Сбоку отдельно единично рендирится сайдбар. При выборе любой другой категории, кроме "All" - будет отрендерена страница без главного поста (Вместо него будет баннер о select категории)
 
 <img src="https://github.com/likserrr/fullstack-remake-quest/blob/master/.media/CategoryGif.gif?raw=true" width="800px">
 
+*--- Animation render page and select category*
+
 ## Search
+
+Строку поиску нужно было реализовать интересней: Данные для поиска должны собираться каждое n-ное время после изменения input поля. После этого происходит рендер постов, а в промежуток прокручивается анимация
 
 <img src="https://github.com/likserrr/fullstack-remake-quest/blob/master/.media/SearchGif.gif?raw=true" width="800px">
 
+*--- Animation of rendering posts based on search results*
+
 ## Last posts and comments
 
+В завершение проработки сайдбара - существует секция с последними постами и комментариями, вычисляющимися со стороны сервера и рендерящахся на основе определенных условий конкретного случая. В результате получается еще 2 пунка меню - последние посты и последняя активность людей
+
 <img src="https://github.com/likserrr/fullstack-remake-quest/blob/master/.media/PostGif.gif?raw=true" width="800px">
+
+*--- Animation to a single post and sidebar widgets*
 
 ## Another
 
