@@ -140,16 +140,23 @@
 
 # Usage
 
-Разбор основных функциональных возможностей приложения. 
+Демонстрация основных функциональных возможностей приложения 
 
-## Preview section
+## Preview and category
 
+При запуске проекта
 
+<img src="https://github.com/likserrr/fullstack-remake-quest/blob/master/.media/CategoryGif.gif?raw=true" width="800px">
 
-## Search section
-## Category section
-## Last post section
-## Last comments section
+## Search
 
+<img src="https://github.com/likserrr/fullstack-remake-quest/blob/master/.media/SearchGif.gif?raw=true" width="800px">
 
+## Last posts and comments
+
+<img src="https://github.com/likserrr/fullstack-remake-quest/blob/master/.media/PostGif.gif?raw=true" width="800px">
+
+## Another
+
+Также были реализованы иные мало заметные возможности по типу пагинатора для переключения страниц, прорисовки скелета постов перед их рендером, сохранение в локальном хранилище выбранной категории для перезагрузки.
 
