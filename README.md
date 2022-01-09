@@ -28,17 +28,23 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#some-problems">Some Problems</a></li>
+    <li><a href="#some-problems">Some Problems</a>
+     <ul>
+        <li><a href="#json-base">JSON Base</a></li>
+        <li><a href="#image-checker">Image Checker</a></li>
+        <li><a href="#project-structure">Project Structure</a></li>
+      </ul>
+     </li>
      <li>
       <a href="#getting-started">Usage</a>
       <ul>
-        <li><a href="#preview-section">Preview section</a></li>
-        <li><a href="#search-section">Search section</a></li>
-        <li><a href="#category-section">Category section</a></li>
-        <li><a href="#last-post-section">Last post section</a></li>
-        <li><a href="#last-comments-section">Last comments section</a></li>
+        <li><a href="#preview-and-category">Preview and category</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#last-posts-and-comments">Last posts and comments</a></li>
+        <li><a href="#another">Another</a></li>
       </ul>
     </li>
+    <li><a href="#contact">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 
@@ -194,3 +200,7 @@
     - [x] Отображение активности и контента поста
     - [ ] Возможность оставить свою активность (Не реализована на фронте, есть на бекенде) 
 - [ ] Реализация функционального футера и хедера с отдельными страницами (Сделать не только блог-страницу)
+
+# Contact
+
+
